@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+    background-color: #f1f1f1;
+    margin: 150px auto;
+    width: 500px;
+    padding: 20px;
+}
+
+main h1{
+    margin: 20px 0;
+    text-align: center;
+}
+
+main .reviewCard:not(#revNo){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .reviewCard .image{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+main .reviewCard .image img{
+    padding: 3px;
+    border: 3px solid lightblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.reviewerIntro p:first-child{
+    text-align: center;
+    color: rgb(20, 192, 20);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.reviewerIntro p:nth-child(2){
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.reviewCard .revText{
+    font-size: 17px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.buttons{
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.buttons button{
+    margin: 0 10px;
+    padding: 3px 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    color: lightgreen;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.buttons button:active{
+    color: green;
+}
+
+#revNo{
+    font-weight: bold;
+    font-style: inherit;
+    margin-bottom: 10px;
+    text-align: left !important;
+}
+
+@media screen and (max-width : 510px){
+    main{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
